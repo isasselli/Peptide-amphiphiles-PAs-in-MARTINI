@@ -52,7 +52,7 @@ COARSE-GRAINED MARTINIZE
 
 	a) First Backbone-side chain angle (it is 100, but must be 180 as the alyphatic tail is not on the side but goes in the same line that the backbone):
 
-	2\t     1     5      2    180    25 ; PAM(C)-GLU(C) SBB
+	2	1	5	2	180	25	; PAM(C)-GLU(C) SBB
 
 	b) If you have a COOH C-terminus only (we often have amidated ones and this is not required): Modify Last P5 type to terminal bead, usually:
 
