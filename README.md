@@ -15,10 +15,15 @@ ATOMISTIC
 For example, if your sequences is: C16-VVAAEE
 
 sed -i "s/AAA/VAL/g" PA_generic.pdb
+
 sed -i "s/BBB/VAL/g" PA_generic.pdb
+
 sed -i "s/CCC/ALA/g" PA_generic.pdb
+
 sed -i "s/DDD/ALA/g" PA_generic.pdb
+
 sed -i "s/EEE/GLU/g" PA_generic.pdb
+
 sed -i "s/FFF/GLU/g" PA_generic.pdb
 
 2) modify sliptPAs-1_decapeptide.tcl to include the correct number of residues.
