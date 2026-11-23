@@ -2,7 +2,7 @@
 
 ./martinize_PAs-C16.py -f PA.pdb -o PA.top -x PA_cg.pdb -ff martini22 -nt -ss CCCCCCCCCCCCCCC
 
-*make sure that you have at least as many Cs as amino acids plust one (as the C16 is also considered an amino acid)
+*make sure that you have at least as many Cs as amino acids plus one (as the C16 is also considered an amino acid)
 
 2) Modify Protein_A.itp:
 
