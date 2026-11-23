@@ -1,0 +1,7 @@
+This tools allow to build PA itp and cg files for MARTINI simulations.
+
+We first generate the atomistic pdb file in the folder atomistic/
+
+Then, we use this to to the CG in the folder coarsegrained/
+
+Please work on a new folder specific for your peptide and copy this files there.

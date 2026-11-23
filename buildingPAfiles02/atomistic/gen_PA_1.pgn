@@ -1,0 +1,20 @@
+
+package require psfgen
+psfcontext reset
+
+topology top_all36_prot_forPAs.rtf
+
+segment P001 {pdb a-001.pdb
+first none
+last CT2
+auto angles dihedrals
+}
+coordpdb a-001.pdb P001
+
+# last CTER (COOH C-terminus)
+
+regenerate angles dihedrals
+guesscoord
+
+writepdb C16-ABCDEFGHIJ_gen.pdb
+# writepsf C16-ABCDEFGHIJ_gen.psf
