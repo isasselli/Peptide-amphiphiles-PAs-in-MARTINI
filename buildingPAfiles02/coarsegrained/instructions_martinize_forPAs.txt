@@ -1,0 +1,34 @@
+1) use the command:
+
+./martinize_PAs-C16.py -f PA.pdb -o PA.top -x PA_cg.pdb -ff martini22 -nt -ss CCCCCCCCCCCCCCC
+
+*make sure that you have at least as many Cs as amino acids plust one (as the C16 is also considered an amino acid)
+
+2) Modify Protein_A.itp:
+
+	a) First Backbone-side chain angle (it is 100, but must be 180 as the alyphatic tail is not on the side but goes in the same line that the backbone):
+
+	2     1     5      2    180    25 ; PAM(C)-GLU(C) SBB
+
+	b) If you have a COOH C-terminus only (we often have amidated ones and this is not required): Modify Last P5 type to terminal bead, usually:
+
+	NN-sc    Qa     5   VAL    BB    11  -1.0000 ; C
+
+
+ADDITIONAL INSTRUCTION FOR CHARGE TUNING:
+
+Most of PA systems like C16VVAAEE require neutralization of some E side chains. E side chains are negatively charged, and we know that if all Es are charged the system does not self-assemble. Thus, supported by experimental evidences, we need to create variants with neutralized charges (and often we assess the effect of the different possibilities in self-assembly).
+
+For example we will have our C16-VVAAEE_-2 folder that we will copy to create the C16-VVAAEE_-1 (if you want we can also do 0)
+
+We reduce the charge of PAs by modifying charge residues in order (lower number = more internal, first).
+
+For E, at the corresponding line of the side chain bead SC1:
+
+Qa      --> P1
+-1.0000 --> 0.0000
+
+For K, at the corresponding line of the side chain bead SC2:
+
+Qd      --> P1
+ 1.0000 --> 0.0000
