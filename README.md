@@ -40,6 +40,8 @@ The pdb file should be created with the name: C16-ABCDEFGHIJ_gen.pdb
 
 Your pdb is ready to martinize
 
+COARSE-GRAINED MARTINIZE
+
 1) use the command:
 
 ./martinize_PAs-C16.py -f PA.pdb -o PA.top -x PA_cg.pdb -ff martini22 -nt -ss CCCCCCCCCCCCCCC
