@@ -1,6 +1,6 @@
 This tools allow to build PA itp and cg files for MARTINI simulations.
 
-We first generate the atomistic pdb file in the folder atomistic/
+We first generate the atomistic pdb file in the folder atomistic/. VMD is necessary to use this tool.
 
 Then, we use this to to the CG in the folder coarsegrained/
 
