@@ -77,4 +77,5 @@ For K, at the corresponding line of the side chain bead SC2:
 Qd      --> P1
  1.0000 --> 0.0000
 
-
+** These protocol was created by Ivan Sasselli, CSIC researcher at Materials Physics Center (CFM) in Donostia-San Sebastian (Spain).
+The protocol was refined by Irene Carbajo (CFM) and Fernanda Campos (Federal University of Goias (UFG), Brazil)
